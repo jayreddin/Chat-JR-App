@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "firebase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "experimental:mcp",
+        "--only",
+        "auth,firestore"
+      ]
+    },
+    "task-master": {
+      "command": "",
+      "args": []
+    },
+    "tasks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "install",
+        "@Parc-Dev/task-breakdown-server"
+      ]
+    }
+  }
+}
